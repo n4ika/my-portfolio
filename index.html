@@ -1,14 +1,108 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <link rel="stylesheet" href="/src/style.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>my-portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dorsa&family=Limelight&family=Martel+Sans:wght@200;300;400;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <meta
+      name="description"
+      content="Naïka C. Estriplet - Software Developer Portfolio"
+    />
+    <meta name="author" content="Naïka Estriplet" />
+    <link rel="icon" type="image/x-icon" href="#" />
+    <script
+      src="https://kit.fontawesome.com/4e21e5dac1.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Naïka's C. Estriplet</title>
   </head>
   <body>
-    <h1>Hello World!</h1>
-    <div id="app"></div>
+    <main>
+      <!-- ******************************************************************
+     HOME PAGE - Main portfolio landing 
+     ******************************************************************-->
+      <section id="home">
+        <header>
+          <!-- Fixed navigation bar -->
+          <nav>
+            <div class="title">
+              <h2 id="role">Software Developer</h2>
+            </div>
+            <ul class="navigation">
+              <!-- Future navigation items (placeholder for portfolio expansion) -->
+              <li><a href="#">works,</a></li>
+              <li><a href="#">about,</a></li>
+              <li><a href="#" class="to-contact-page">contact</a></li>
+            </ul>
+          </nav>
+        </header>
+        <!-- Availability status widget -->
+        <div id="availability">
+          <h2 id="current-day"></h2>
+          <div id="details">
+            <h2 id="current-month"></h2>
+            <p class="status">available</p>
+            <p class="status">for work</p>
+          </div>
+        </div>
+        <!-- Bio section with introduction -->
+        <section id="bio">
+          <h1 id="name">Naïka C. Estriplet</h1>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat. Duis aute irure dolor in
+            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+            culpa qui officia deserunt mollit anim id est laborum.
+          </p>
+        </section>
+        <!-- CTA to contact page -->
+        <div id="contact-me" class="to-contact-page">
+          <p class="button to-contact-page"><a href="#">Contact Me</a></p>
+          <p class="button to-contact-page"><a href="#">Contact Me</a></p>
+          <p class="button to-contact-page"><a href="#">Contact Me</a></p>
+        </div>
+      </section>
+      <!-- ******************************************************************
+     CONTACT PAGE - Contact information
+     ****************************************************************** -->
+      <section id="contact-page" class="hidden">
+        <a href="#" id="return-home">take me home</a>
+        <h2>Please, get in touch.</h2>
+        <p id="email-description">
+          Need a beautiful, well-structured website that you can own and
+          maintain yourself? Tell me about it.
+        </p>
+        <div id="email">
+          <p>Email:</p>
+          <p>
+            <!-- Subject: 🤝Project info. Let's Connect. -->
+            <a
+              href="mailto:hello@maybe-something.com?subject=%F0%9F%A4%9DProject%20info.%20Let's%20Connect."
+              >hello@maybe-something.com</a
+            >
+          </p>
+        </div>
+        <div id="socials">
+          On the Internet:
+          <a href="https://www.linkedin.com/in/naikaestriplet/"
+            ><i class="fa-brands fa-linkedin"></i
+          ></a>
+          <a href="https://github.com/n4ika"
+            ><i class="fa-brands fa-square-github"></i
+          ></a>
+        </div>
+      </section>
+    </main>
+    <footer></footer>
     <script type="module" src="/src/main.js"></script>
   </body>
 </html>
